@@ -9,4 +9,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"undefined"!=typeo
 },{}],"Focm":[function(require,module,exports) {
 "use strict";var e=u(require("./fragment.frag")),r=u(require("./vertex.vert")),t=u(require("regl"));function u(e){return e&&e.__esModule?e:{default:e}}var o=(0,t.default)(),a=o({frag:e.default,vert:r.default,attributes:{position:[[-1,-1],[0,1],[1,-1],[1,0]]},uniforms:{frame:o.prop("frame"),mouse:o.prop("mouse")},depth:{enable:!1},count:4}),n=0,f=[0,0];document.addEventListener("mousemove",function(e){f=[e.clientX,1300-e.clientY]}),o.frame(function(e){e.tick;o.clear({color:[0,0,0,1]}),a({frame:n,mouse:f}),n+=1});
 },{"./fragment.frag":"z9U7","./vertex.vert":"7QtM","regl":"Jx9Q"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.9d7b3a02.js.map
+//# sourceMappingURL=/regl-test/src.9d7b3a02.js.map
