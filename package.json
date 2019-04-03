@@ -4,7 +4,7 @@
   "description": "Testing out regl with a fragment shader I wrote a while back",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url /regl-test/",
     "start": "parcel --open -p 3000 ./src/index.html"
   },
   "author": "Zanchi <emzanchi@gmail.com> (https://github.com/zanchi)",
